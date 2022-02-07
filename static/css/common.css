@@ -1,0 +1,556 @@
+	* {
+	    margin: 0;
+	    padding: 0;
+	    outline: none;
+	}
+
+	a {
+	    text-decoration: none;
+	}
+
+	#page #banner-carousel,
+	#page #banner-carousel article {
+
+	    float: left;
+	    width: 100%;
+	    margin: 15px 0 0 0;
+	}
+
+	#student-page .selected {
+	    display: none;
+	}
+
+	#instructor-page .selected {
+	    display: none;
+	}
+
+	.books-list .accordion,
+	.accordion * {
+	    -webkit-box-sizing: border-box;
+	    -moz-box-sizing: border-box;
+	    box-sizing: border-box;
+	}
+
+	.books-list {
+	    max-width: 640px;
+	    width: 100%;
+	    float: left;
+	    background: #fff;
+	    padding: 25px 35px 40px 40px;
+	}
+
+	.books-list .accordion {
+	    border: 1px solid #ccc;
+	    float: left;
+	    width: 100%;
+	    margin-top: 2px;
+	}
+
+	/*----- Section Titles -----*/
+
+	.books-list .accordion-section-click {
+	    width: 25px;
+	    padding: 0 10px 0 10px;
+	    display: inline-block;
+	    transition: all linear 0.15s;
+	    color: #000;
+	    float: left;
+	    margin-top: 2px;
+	}
+
+	.books-list .accordion-section-click span {
+	    display: block;
+	    width: 15px;
+	    height: 15px;
+	    background: url('../images/sprite-icons.png') -20px 0px no-repeat;
+	}
+
+	.books-list .table-content {
+	    width: 100%;
+	    float: left;
+	    background: #0096d6;
+	    color: #fff;
+	    clear: both;
+	    font-size: 16px;
+	}
+
+	.books-list .col-large {
+	    width: 64%;
+	    float: left;
+	}
+
+	.books-list .col-small {
+	    min-width: 5%;
+	    padding-left: 4px;
+	    position: relative;
+	    float: left;
+	    max-width: 13%;
+	}
+
+	.books-list .col-medium {
+	    width: 18%;
+	    float: right;
+	}
+
+	.books-list .table-content span {
+	    padding: 10px 0px 10px 10px;
+	    display: block;
+	}
+
+	.books-list .accordion-section-click.active span {
+	    background: url('../images/sprite-icons.png') -33px -6px no-repeat;
+	}
+
+	/*----- Section Content -----*/
+
+	.books-list .accordion-section-content .book-data {
+	    padding: 15px 25px;
+	    display: none;
+	    margin-top: 20px;
+	    color: #666869;
+	    font-size: 12px;
+	}
+
+	.books-list .accordion-section-content {
+	    border-bottom: 1px solid #ccc;
+	    float: left;
+	    width: 100%;
+	    padding: 10px 0;
+	    position: relative;
+	}
+
+	.books-list .accordion-section .list {
+	    width: 100%;
+	    float: left;
+	}
+
+	.books-list .accordion-section .list a {
+	    color: #0096d6;
+	    font-size: 12px;
+	}
+
+	.books-list .accordion-section .list .col-small {
+	    font-size: 12px;
+	    color: #666;
+	}
+
+	.books-list ul li {
+	    line-height: 16px;
+	    list-style: none;
+	}
+
+	.books-list .pop-icon {
+	    background: url('../images/sprite-icons.png') -44px -0px no-repeat;
+	    display: inline-block;
+	    width: 10px;
+	    height: 10px;
+	    position: absolute;
+	    top: 3px;
+	    right: -12px;
+	    cursor: pointer;
+	}
+
+	.books-list .pop-icon.open {
+	    background: url('../images/sprite-icons.png') -33px -0px no-repeat;
+	}
+
+	.books-list .version-data {
+	    position: absolute;
+	    display: none;
+	    top: 35px;
+	    right: 135px;
+	    background: #fff;
+	    z-index: 1;
+	    border: 1px solid #ababab;
+	    border-radius: 5px;
+	    padding: 10px;
+	    width: 160px;
+	    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+	}
+
+	.books-list .version-data ul li {
+	    padding: 6px;
+	    font-size: 12px;
+	    border-top: 1px solid #efefef;
+	}
+
+	.books-list .version-data ul li:first-child {
+	    border-top: none;
+	    margin-top: 5px;
+	}
+
+	.books-list .version-data h5 {
+	    color: #3f3f3f;
+	    font-size: 12px;
+	}
+
+	.books-list .version-data ul li a {
+	    color: #149ed9
+	}
+
+	.books-list h2 {
+	    font-size: 24px;
+	    color: #004156;
+	    margin-bottom: 40px;
+	}
+
+	.updateOverlay,
+	.update-overlay-popup,
+	.invisible {
+	    display: none;
+	}
+
+	.updateOverlay {
+	    width: 100%;
+	    height: 100%;
+	    position: fixed;
+	    z-index: 2;
+	    background: rgba(0, 0, 0, 0.6);
+	    top: 0;
+	}
+
+	.update-overlay-popup {
+	    border-top: 5px solid #0096d6;
+	    width: 550px;
+	    left: 50%;
+	    position: fixed;
+	    z-index: 3;
+	    padding: 15px;
+	    background: #fff;
+	    top: 50%;
+	    margin-left: -275px;
+	    margin-top: -119px;
+	    text-align: left;
+	}
+
+	.update-overlay-popup-supplemental-file {
+	    border-top: 5px solid #0096d6;
+	    width: 550px;
+	    left: 50%;
+	    position: absolute;
+	    z-index: 3;
+	    padding: 15px;
+	    background: #fff;
+	    top: 35%;
+	    margin-left: -275px;
+	    margin-top: -119px;
+	    text-align: left;
+	}
+
+	.supplementalFileTable {
+		width: 100%;
+		float: left;
+		word-break: break-all;
+	}
+
+	.books-list .update,
+	.books-list .updating {
+	    padding: 7px;
+	    background: #28be29;
+	    /*width: 95%;*/
+	    color: #fff;
+	    text-align: center;
+	    display: inline-block;
+	    border-radius: 3px;
+	    font-size: 10px;
+	    text-transform: capitalize;
+	    cursor: pointer;
+	}
+
+	.books-list .updated {
+	    font-size: 10px;
+	    color: #28be29;
+	    text-transform: capitalize;
+	    text-align: center;
+	    width: 90%;
+	    display: inline-block;
+	}
+
+	.confirm-popup-head {
+	    border-bottom: 1px solid #ccc;
+	    padding-bottom: 5px;
+	    margin-bottom: 10px;
+	    position: relative;
+	}
+
+	.update-overlay-popup p {
+	    margin: 10px 0;
+	    color: #666869;
+	    font-size: 12px;
+	}
+
+	.confirm-popup-head h2 {
+	    margin-bottom: 5px;
+	    color: #0096d6;
+	    font-size: 20px;
+	}
+
+	.confirm-popup-head .popup-close {
+	    position: absolute;
+	    background: url('../images/sprite-icons.png') -0px -0px no-repeat;
+	    right: 0;
+	    top: 0;
+	    display: inline-block;
+	    height: 30px;
+	    width: 20px;
+	    cursor: pointer;
+	}
+
+	.update-overlay-popup .thanks,
+	.update-overlay-popup .update {
+	    width: 80px;
+	    height: 10px;
+	    padding: 5px 10px;
+	    float: right;
+	    text-align: center;
+	    color: #fff;
+	    font-size: 10px;
+	    border-radius: 5px;
+	    background: #28be29;
+	    cursor: pointer;
+	}
+
+	.update-overlay-popup .list-container {
+	    font-size: 12px;
+	    margin-top: 5px;
+	}
+
+	.update-overlay-popup ul {
+	    list-style: inside circle;
+	    padding: 10px;
+	    line-height: 15px;
+	}
+
+	.update-overlay-popup ul li {
+	    padding-bottom: 4px;
+	}
+
+	.update-overlay-popup .update.disabled {
+	    background: #6d7075;
+	    color: #a0aab7;
+	    cursor: default;
+	}
+
+	.update-overlay-popup .thanks {
+	    background: #a0aab7;
+	    margin-right: 10px;
+	}
+
+	.books-list .accordion-section-content .book-data.open,
+	.books-list .accordion-section-content .version-data.open,
+	.update-overlay-popup.open,
+	.updateOverlay.open {
+	    display: block;
+	}
+
+	.books-list.two-column .col-medium {
+	    display: block;
+	    margin-top: -2px;
+	}
+
+	.books-list.two-column .col-large {
+	    width: 64%;
+	}
+
+	.books-list.two-column .version-data {
+	    right: 25px;
+	}
+
+	/* My Content & Entitlement START */
+
+	li {
+	    list-style-type: none;
+	}
+
+	.rowFontHeading {
+	    font-size: 14px;
+	}
+
+	.rowFont {
+	    font-size: 12px;
+	}
+
+
+	.modules-data {
+	    margin: 20px 0px 10px 50px;
+	    color: #666869;
+	    font-size: 12px;
+	}
+
+	.tbl {
+	    display: table;
+	}
+
+	section.tbl>div {
+	    display: table-row;
+	}
+
+	.tbl>div>div {
+	    display: inline-block;
+	    padding: 6px 0px 0px 8px;
+	}
+
+	.dottedHeader {
+	    border-bottom: 1px solid cadetblue;
+	}
+
+	.tbl>div.grouping>div {
+	    background: white;
+	}
+
+	.tbl>div.grouping>div:last-child {
+	    width: 100%;
+	}
+
+	.detailsDiv {
+	    border: none;
+	}
+
+	.detailsDiv .rowFont a{
+	    color : #0096d6;
+	    word-wrap: break-word;
+	}
+
+	table.dataTable tbody tr.myeven{
+	    background-color: #89CFF0;
+	}
+	table.dataTable tbody tr.myodd{
+	    background-color:#bce8f1;
+	}
+
+	#mycontent_filter input, #myentitlement_filter input {
+	    display: inline-block !important;
+	    width: auto;
+	    vertical-align: middle;
+	    height: 30px;
+	    padding: 6px 12px;
+	    font-size: 14px;
+	    line-height: 1.42857143;
+	    color: #555;
+	    background-color: #fff;
+	    background-image: none;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+	    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+	    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+	}
+
+	#myentitlement_filter, #mycontent_filter {
+	    width: 100%;
+	    margin: 10px;
+	}
+
+	.bookTitleDT {
+		min-width : 350px;
+		max-width : 367.25px;
+		color: black;
+
+	}
+
+	table.dataTable thead th {
+	    background-attachment: scroll;
+	    background-color: #0081C7!important;
+	    background-position: left top;
+	    background-repeat: repeat-x;
+	    color: #FFFFFF!important;
+	    cursor: pointer;
+	    font-size: 14px!important;
+	    font-weight: bold!important;
+	    padding: 5px 0 5px 8px;
+    }
+
+    .dt {
+	    display: inline-block;
+	    font: normal normal normal 14px/1 FontAwesome;
+	    font-size: inherit;
+	    text-rendering: auto;
+	    -webkit-font-smoothing: antialiased;
+	    -moz-osx-font-smoothing: grayscale;
+	}
+
+    .dt-arrow-right {
+    	
+    	width: 10px;
+    	height: 10px;
+    	background: url(../images/dt-arrow-right.png) no-repeat center;
+    	opacity: 0.5;
+    	cursor : pointer;
+
+    }
+    .dt-arrow-right-dark {
+    	
+    	width: 10px;
+    	height: 10px;
+    	background: url(../images/dt-arrow-right.png) no-repeat center;
+    	cursor : pointer;
+
+    }
+    .dt-arrow-down {
+
+    	width: 10px;
+    	height: 10px;
+    	background: url(../images/dt-arrow-down.png) no-repeat center;
+    	opacity: 0.5;
+    	cursor : pointer;
+    }
+    .dt-arrow-down-dark {
+
+    	width: 10px;
+    	height: 10px;
+    	background: url(../images/dt-arrow-down.png) no-repeat center;
+    	cursor : pointer;
+    }
+
+    table.dataTable thead .sorting_desc {
+        background-image: url(../images/sort_desc_new.png);
+	    
+    }
+
+    .data-table-content {
+    	width: 100%;
+	    background: #0096d6;
+	    color: #fff;
+	    font-size: 16px;
+    }
+
+    .data-table-content span {
+    	padding: 10px 0px 10px 10px;
+    }
+
+    .mdlBar {
+    		width:380px;
+    }
+    
+    /*
+    	CSS Classname - mdlBar
+		Chrome 	, Safari - 390px
+		Firefox , Edge 	 - 380px
+
+    */
+
+    /* saf3+, chrome1+ */
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+    	.mdlBar {
+    		width: 385px;
+    	}
+
+    }
+	
+	/* Edge Browsers */
+    @supports (-ms-ime-align:auto) {
+	    .mdlBar {
+    		width: 380px;
+    	}
+	}
+
+	/* Firefox Browsers */
+    @-moz-document url-prefix() { 
+		  .mdlBar {
+	    	width:380px;
+		}	
+	}
+
+	/* My Content & Entitlement END */

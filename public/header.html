@@ -1,0 +1,37 @@
+  {{ define "header" }}
+<div data-th-fragment="header">
+    <header role="banner">
+
+        <a href="https://www.cisco.com">
+            <h1 style="width: 90px;">Cisco Learning Space</h1>
+        </a>
+        <a href="/">
+            <h1 style="width: 335px; background-position: 110% center; margin-top: 5px;">
+                Cisco Learning Space
+            </h1>
+        </a>
+        {{ if not .UserName }}
+        <div id="welcome-header-login-div">
+            <a href="https://idreg.cloudapps.cisco.com/idreg/register.do?locale=en_US"
+               class="button small-button blue-gradient">Register</a>
+            <a href="/login" id="sign-in" rel="nofollow" class="button small-button blue-gradient">Login</a>
+
+        </div>
+        {{ else }}
+        <div id="welcome-header-div">
+            <h2><span id="welcome-header">Welcome, {{.UserFullName}}</span>
+                <br />
+                <span style="float:right;font-size:80%;" id="ccoid-span">({{.UserName}})</span>
+            </h2>
+            <a href="/content" class="button small-button blue-gradient">My Content</a>
+            <form action="/admin/login" method="POST" id="admin-form" name="admin-form">
+                <input name="username" value="{{.CCOID}}" type="hidden" />
+                <input name="accesscode" value="{{.AccessCode}}" type="hidden" />
+                <button type="submit" class="button small-button blue-gradient">Admin</button>
+            </form>
+            <a href="/logout" class="button small-button blue-gradient">Logout</a>
+        </div>
+        {{ end }}
+    </header>
+</div>
+{{ end }}

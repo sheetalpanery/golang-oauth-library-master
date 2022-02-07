@@ -1,0 +1,157 @@
+{{ define "templates" }}
+<!DOCTYPE html>
+<html lang="en" class="ltr yui3-js-enabled webkit ltr js chrome chrome47 chrome47-0 mac secure" dir="ltr">
+
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+	<meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+	<link href="images/favicon.ico" rel="Shortcut Icon" />
+	<meta charset="utf-8" />
+	<title>Cisco Learning Network Space</title>
+	<meta name="description" content="" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+</head>
+
+<body>
+{{template "mycontent" .}}
+	<div data-th-fragment="book-list-new">
+		<script type="template/underscore" id="bookContainerNew">
+			<div class="detailsDiv">
+		<section class="tbl" style="width:100%;">
+				<div style="width:100%" class="accordion-section-content-new">
+						<div class="sub-details-control" data-mdlmasterid="7479" style="width:31px;height: 18px;">
+	
+							<i class="dt dt-arrow-right" aria-hidden="true"  data-mdlmasterid="7479"></i>
+	
+						</div>
+	
+						<div class="mdlBar">
+							<span class="rowFont">
+								<a class="linkClick" href="#" data-latest="false" data-instructor="false" id="5162/zh-CN/1.0.0" value="7479"> 
+									RB-QAREG4 - 用于测试目的的EPUB示例 - 学生指南
+								</a>
+							</span>
+						</div>
+	
+						<div style="width:105px;text-align: center;" style="display:none">
+								<span class="rowFont">1.0.0</span>
+									<span class="update" data-groupid="123" data-title="test" value="7479">
+										Update Available
+									</span>
+	
+									<span class="updating" data-groupid="123" data-title="test" value="7479" style="display:none;">
+										<img style="height: 17px;float: left;margin: -2px;" src="images/loader.gif" />
+										<span> Updating...</span>
+									</span>
+									
+								
+									<span class="update" data-title="test" value="7479">
+									<img style="height: 17px;float: left;margin: -3px -6px -3px 0;" src="images/loader.gif" />
+									<span> Updating...</span>
+									</span>
+								
+									<span class="update" data-title="test" value="7479" style="display: none;">
+									Update Failed
+									</span>
+								
+									<span style="cursor: none;color: #1BA56B;font-size: 11px;" style="display:none">
+									Updated!
+									</span>
+								
+						</div>
+	
+						<div style="width:88px;text-align: center;" class="rowFont">01/18/2022</div>
+	
+					</div>
+					<div id="C7479" class="book-list" style="display:none;">
+						<ul class="modules-data">
+							<li><span>Module ID : </span> RB-QAREG4-1.0.0-SG_zh-CN</li>
+							<li><span>Learning Partner : </span> CISCO</li>
+							<li><span>Provider : </span> Cisco Internal Test Orders</li>
+							<li><span>Redeemed : </span> 01/07/2022</li>
+							<li><span>Language : </span>简体中文 (Simplified Chinese)</li>
+						</ul>
+					</div>
+			</section>
+	</div>	
+</script>
+	</div>
+
+
+
+	<div data-th-fragment="entitlement-list-new">
+		<script type="template/underscore" id="entitlementContainerNew">
+	<div class="detailsDiv">
+		<section class="tbl" style="width:100%;">
+			<div style="width:100%" class="accordion-section-content-new">
+					<div style="width:31px;height: 18px;"></div>
+					
+						<div class="mdlBar supplemental-text">
+							<span class="rowFont" >
+								<a class="supplemental" href="#" data-acronym="1233" data-version="1.0.0"> 
+									Supplemental Files
+								</a>
+							</span>
+						</div>
+				</div>
+
+				<div style="width:100%" class="accordion-section-content-new">
+						<div class="sub-details-control" data-mdlmasterid="7701" style="width:31px;height: 18px;">
+
+							<i class="dt dt-arrow-right" aria-hidden="true" data-mdlmasterid="7701"></i>
+
+						</div>
+
+						<div class="mdlBar">
+							<span class="rowFont">
+								<a class="linkClick" href="#" data-latest="false" data-instructor="false" id="5297/en-US/2.0.3" value="7701"> 
+									RB-ENSDWI-TEST - Implementing Cisco SD-WAN Solutions - Student Learning Guide
+								</a>
+							</span>
+						</div>
+
+						<div style="width:105px;text-align: center;">
+								<span class="rowFont">1.0.0 </span>
+						</div>
+
+						<div style="width:88px;text-align: center;" class="rowFont">01/20/2022</div>
+
+					</div>
+					<div id="E7701" class="book-list" style="display:none;">
+						<ul class="modules-data">
+							<li><span>Module ID : </span> RB-ENSDWI-TEST-2.0.3-SLG_en-US</li>
+							<li><span>Learning Partner : </span> CISCO</li>
+							<li><span>Provider : </span> CIMS </li>
+							<li><span>Entitlement Date :</span> 10/18/2021</li>
+							<li><span>Language : </span> English</li>
+						</ul>
+					</div>
+				
+		</section>
+	</div>	
+</script>
+	</div>
+
+
+
+	<div data-th-fragment="supplemental-files-list">
+		<script type="template/underscore" id="supplementalFilesEmptyDiv">
+		<div>
+			<span>No files available</span>
+		</div>
+	</script>
+	</div>
+
+
+
+	<div data-th-fragment="search_label">
+		<script type="template/underscore" id="searchLabel">
+		<span>Search</span>
+	</script>
+	</div>
+
+	<script type="text/javascript" src="https://www.cisco.com/c/dam/cdc/t/ctm.js"></script>
+</body>
+
+</html>
+{{ end }}

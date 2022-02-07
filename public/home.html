@@ -1,0 +1,286 @@
+{{ define "home" }}
+<!DOCTYPE html>
+<html lang="en" class="ltr yui3-js-enabled webkit ltr js chrome chrome47 chrome47-0 mac secure" dir="ltr">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <link href="../static/images/favicon.ico" rel="Shortcut Icon" />
+    <link href="../static/css/base.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/application.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/layout.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/dockbar.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/navigation.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/forms.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/extras.css" rel="stylesheet" type="text/css" />
+    <link href="../static/css/common.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <title>Cisco Learning Network Space</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <script type="text/javascript" src="../static/js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="../static/js/main.js"></script>
+</head>
+
+<body id="landing">
+<div id="page">
+    {{template "header" .}}
+    <div id="content">
+        <div id="landing">
+            <div id="page">
+                <!-- Display error message -->
+                <h4 style="background: red; color: white; border-radius: 5px; padding: 7px; margin: 5px; display:none">Error
+                    message</h4>
+                <!-- End display error message -->
+                <div role="main">
+                    <div id="carousel" class="carousel">
+                        <nav>
+                            <ol>
+                                <li id="networkSpace" class="on">
+                                    <a href="#what-is-cisco-ple">What is Cisco Learning Network Space?</a>
+                                </li>
+                                <li>
+                                    <a href="#free-online-course">Download Free Online Courses</a>
+                                </li>
+                                <!-- Show download application tab condition wise -->
+                                <li id="downloadAppTab">
+                                    <a href="#download-app">Download Application</a>
+                                </li>
+                            </ol>
+                        </nav>
+                        <section id="what-is-cisco-ple">
+                            <h2>Introduction</h2>
+                            <!-- Show maintanance information condition wise -->
+                            <div style="display:none">
+                                <div>
+                                    <p class="banner">
+                                        <b>Scheduled Maintenance Notification:</b> <br />
+                                        Please be advised that Cisco Learning Network Space is scheduled for a maintenance downtime during
+                                        the following time period:
+                                        <br /><br />
+                                        <b>Start Time: <span>Saturday, August 20, 2016, 12:30 AM PDT</span></b>
+                                        <br />
+                                        <b>End Time: <span>Saturday, August 20, 2017, 2:30 AM PDT</span></b>
+                                        <br />
+                                        <br />
+                                        Please <b>do not</b> use this site during the downtime or your data may be lost.
+                                    </p>
+                                </div>
+                                <div>
+                                    <p class="banner">
+                                        <b>Due to the Cisco year-end shutdown from <span>December 22, 2018</span> through <span>January 1,
+                          2019</span>, Cisco Learning Network Space support will not be available at that time. We will
+                                            resume normal business operations on <span>January 2, 2019</span>. Thank you.</b>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- End show maintance tab -->
+                            <p>Cisco Learning Network Space is a digital learning platform built to offer instant user access to
+                                training
+                                information, course materials, and exam preparation resources. This customizable, personal learning
+                                environment provides you with your
+                                content, when you want it, how you want it delivered.</p>
+                            <a href="https://idreg.cloudapps.cisco.com/idreg/register.do?locale=en_US"
+                               class="button blue-gradient">Register Today</a>
+                            <a href="http://www.cisco.com/web/help/reg/ben/index.html" id="benefitsOfRegisteringLink">Benefits of
+                                Registering with Cisco</a>
+                        </section>
+                        <section id="free-online-course">
+                            <form id="freecontentForm" method="post" action="">
+                                <h2>Free Online Courses</h2>
+                                <article class="">
+                                    <h3>
+                                        <a style="text-decoration: none; color: white" href="/login" id="linkClick">Guide de l'utilisateur
+                                            du lecteur Cisco Learning Network Space - Guide étudiant</a>
+                                    </h3>
+                                    <br />
+                                    <p>CLNSp User Guide in French Language</p>
+                                    <input type="hidden" id="moduleName5849" value="CLNSp_UserGuide-1.0.0-SG_fr-FR" />
+                                    <input type="hidden" id="moduledefinedId5849"
+                                           value="Guide de l'utilisateur du lecteur Cisco Learning Network Space - Guide étudiant" />
+                                    <input type="hidden" id="moduleCCS5849" value="3947/fr-FR/1.0.0" />
+                                </article>
+                                <article class="">
+                                    <h3>
+                                        <a style="text-decoration: none; color: white" href="/login" id="linkClick">Guide de l'utilisateur
+                                            du lecteur Cisco Learning Network Space - Guide étudiant</a>
+                                    </h3>
+                                    <br />
+                                    <p>CLNSp User Guide in French Language</p>
+                                    <input type="hidden" id="moduleName5849" value="CLNSp_UserGuide-1.0.0-SG_fr-FR" />
+                                    <input type="hidden" id="moduledefinedId5849"
+                                           value="Guide de l'utilisateur du lecteur Cisco Learning Network Space - Guide étudiant" />
+                                    <input type="hidden" id="moduleCCS5849" value="3947/fr-FR/1.0.0" />
+                                </article>
+                                <article class="">
+                                    <h3>
+                                        <a style="text-decoration: none; color: white" href="/login" id="linkClick">Guide de l'utilisateur
+                                            du lecteur Cisco Learning Network Space - Guide étudiant</a>
+                                    </h3>
+                                    <br />
+                                    <p>CLNSp User Guide in French Language</p>
+                                    <input type="hidden" id="moduleName5849" value="CLNSp_UserGuide-1.0.0-SG_fr-FR" />
+                                    <input type="hidden" id="moduledefinedId5849"
+                                           value="Guide de l'utilisateur du lecteur Cisco Learning Network Space - Guide étudiant" />
+                                    <input type="hidden" id="moduleCCS5849" value="3947/fr-FR/1.0.0" />
+                                </article>
+                                <article class=""></article>
+                                <input type="hidden" id="moduleId" value="" />
+                                <input type="hidden" id="moduleName" value="" />
+                                <input type="hidden" id="moduledefinedId" value="" />
+                                <input type="hidden" id="moduleCCS" value="" />
+                                <input type="hidden" id="launchRedirect" value="true" />
+                            </form>
+                        </section>
+                        <section id="download-app">
+                            <h2 data-th-text="#{GET_APP}">
+                                Get the Application
+                            </h2>
+                            <p class="download-msg">Download our eReader application for seamless sync and backup of Course
+                                Progress, Notes, Bookmarks, and Highlights.
+                                <br />
+                                <br />
+                            </p>
+                            <p class="download-msg" style="display: none;">Download our eReader application for seamless sync and
+                                backup of Course Progress, Notes, Bookmarks, and Highlights.
+                                <br />
+                                <br />
+                            </p>
+                            <br />
+                            <div class="badge-link">
+                                <a href="https://play.google.com/store/apps/details?id=com.cisco.dkit" target="_blank">
+                                    <img src="../static/images/badges/android/ico_android-en_US.png" class="download-badge" />
+                                </a>
+                                <a href="https://itunes.apple.com/in/app/cisco-ereader/id722452404" target="_blank">
+                                    <img src="../static/images/badges/ios/ico_ios-en_US.svg" class="download-badge" />
+                                </a>
+                            </div>
+                            <div class="badge-link">
+                                <a href="https://itunes.apple.com/in/app/cisco-ereader/id1088900981" target="_blank">
+                                    <img src="../static/images/badges/mac/ico_mac-en_US.svg" class="download-badge" />
+                                </a>
+                                <a id="dwnld" href="#">
+                                    <img src="../static/images/badges/windows/ico_windows-en_US.png" class="windows-badge" />
+                                </a>
+                            </div>
+                            <div class="sys-req">
+                                Details on
+                                <a href="https://learningspace.cisco.com/document/?page_id=27">Cisco Learning Network Space System
+                                    Requirements</a>
+                            </div>
+                        </section>
+                    </div>
+                    <aside>
+                        <h4 class="heading-gradient">Quick Links</h4>
+                        <ul>
+                            <li>
+                                <a href="https://learningnetwork.cisco.com/s">
+                                    <h5>Visit the Cisco Learning Network</h5>
+                                    <p>Get valuable IT training resources for all Cisco certifications.</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                        href="https://www.cisco.com/c/en/us/training-events/training-certifications/recertification-policy.html">
+                                    <h5>Re-certification</h5>
+                                    <p>Renew your certification to keep it valid</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://learningnetwork.cisco.com/s/article/exam-information-index">
+                                    <h5>Exam Information</h5>
+                                    <p>Obtain detailed exam information for entry-level, associate, professional, expert-level, and
+                                        specialist
+                                        certifications</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://learningnetwork.cisco.com/s/article/policies-reference-amp-tools-index">
+                                    <h5>Policies</h5>
+                                    <p>Read about the collection of policies that are related to Cisco certification and training</p>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://learningnetwork.cisco.com/s/article/tools-index">
+                                    <h5>Tools</h5>
+                                    <p>Explore resources to help you with your learning or certifications</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </aside>
+                    <ul id="banners">
+                        <li>
+                            <a href="http://mkto.cisco.com/LearningatCiscoOptIn.html" style="text-decoration: none;">
+                                <div class="home-banner1">
+                                    <span class="info">Want to Learn More? Join Us!</span>
+                                    <span class="msg">Subscribe to the Learning@Cisco Newsletter</span>
+                                    <div class="btn-text">Sign Up Now</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://learningnetwork.cisco.com/community/learning_center/self_assessments"
+                               style="text-decoration: none;">
+                                <div class="home-banner2">
+                                    <span class="msg">Assess Your Skills</span>
+                                    <div class="btn-text">Access Now</div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Include footer here -->
+    </div>
+</div>
+<div class="updateOverlay"></div>
+<div id="show-ccoid-change-alert" class="update-overlay-popup">
+    <div class="confirm-popup-head">
+        <h2>Alert!</h2>
+        <span></span>
+        <span class="popup-close"></span>
+    </div>
+    <p id="accessMsg" style="font-size: 0.9em">
+        To use the Cisco eReader applications (for Windows, macOS, iPad, and Android), you will need to log in using your
+        CCO ID instead of your e-mail address.</p>
+    <p style="font-size: 0.9em">If you have recently registered for a Cisco.Com account and do not know your CCO ID,
+        visit your Cisco.Com <b>Profile Management</b> page through <a
+                href="https://identity.cisco.com/ui/tenants/global/v1.0/profile-ui/personal/"
+                target="_blank">https://identity.cisco.com/ui/tenants/global/v1.0/profile-ui/personal/</a> where you will find
+        the CCO ID listed under <b>Username</b> on the lower left. <strong>
+            <font face="monospace"></font>
+        </strong>
+    </p>
+</div>
+
+<script type="text/javascript" src="../static/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../static/js/CiscoPLESite.js"></script>
+<script type="text/javascript" src="https://www.cisco.com/c/dam/cdc/t/ctm.js"></script>
+<!--<script>-->
+
+
+<!--        $(document).ready(function() {-->
+<!--            console.log({{.UserName}})-->
+<!--            var userName = {{.UserName}}-->
+<!--            if(userName != null && userName.length > 0){-->
+
+<!--                $("#welcome-header-div").show();-->
+<!--                $("#welcome-header-login-div").hide();-->
+<!--                $("#welcome-header").text("Welcome, "+{{.UserFullName}})-->
+<!--                $("#ccoid-span").text("("+{{.CCOID}}+")")-->
+<!--                $(".username").val({{.UserName}})-->
+<!--                $(".accesscode").val({{.AccessCode}})-->
+<!--            }else{-->
+<!--                console.log("username is found."+userName)-->
+<!--            }-->
+
+<!--         });-->
+
+
+
+<!--</script>-->
+</body>
+
+</html>
+{{ end }}

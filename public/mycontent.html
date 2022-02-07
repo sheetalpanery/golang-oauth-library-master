@@ -1,0 +1,355 @@
+{{ define "mycontent" }}
+<!DOCTYPE html>
+<html lang="en" class="ltr yui3-js-enabled webkit ltr js chrome chrome47 chrome47-0 mac secure" dir="ltr">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+    <link href="../static/images/favicon.ico" rel="Shortcut Icon" />
+    <link href="../static/css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/jquery-ui-1.12.1.css" />
+    <link rel="stylesheet" type="text/css" href="../static/css/jquery.dataTables.min.css" />
+
+    <style>
+        .noRecords {
+            margin-top: 30px;
+            margin-left: 220px;
+            font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light',
+            'Helvetica Neue', Arial, Helvetica, sans-serif;
+            color: #B02B20;
+            font-size: 14px;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title>Cisco Learning Network Space - My Content</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="_csrf" content="7c3d45bc-6bbe-4dcc-843b-3449b8cd9696" />
+    <meta name="_csrf_header" content="X-CSRF-TOKEN" />
+    <link id="aui_3_4_0_1_64" type="text/css" rel="stylesheet" href="../static/css/combo.css" />
+    <script type="text/javascript" src="../static/js/jquery-3.4.0.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../static/js/util.js?util.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.blockUI.js"></script>
+    <script type="text/javascript" src="../static/js/underscore.min.js"></script>
+    <script type="text/javascript" src="../static/js/q.js"></script>
+    <script type="text/javascript" src="../static/js/mycontent.js"></script>
+    <script type="text/javascript" src="../static/js/mycontent_new.js"></script>
+    <script type="text/javascript" src="../static/js/myentitlement.js"></script>
+
+    <!-- DataTable JS files -->
+    <script type="text/javascript" src="../static/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="../static/js/moment.min.js"></script>
+    <script type="text/javascript" src="../static/js/datetime-moment.js"></script>
+    <!-- DataTable JS files -->
+
+    <script type="text/javascript" src="../static/js/intl-messageformat.min.js"></script>
+
+    <script type="text/javascript">
+        window.ccoid = /*[[${user.ccoid}]]*/ "";
+        window.language = /*[[#{LOCALE}]]*/ "";
+        var accessMsg = /*[[#{ACCESS_INFO}]]*/ "";
+        window.user = /*[[${user}]]*/ "";
+    </script>
+</head>
+
+<body>
+<div id="page">
+    {{template "header"}}
+    <div id="content">
+        <div id="account">
+            <div id="testStatus" style="padding: 5px; display: none">&nbsp;</div>
+            <div id="checkReaderAlive" style="padding: 5px; display: none">&nbsp;</div>
+            <div id="popupcontainer" class="overlay invisible">
+                <div id="popup" class="popHolder">
+                    <p id="sessionMsg" class="invisible">Selected Active Sessions have been stopped successfully.
+                    </p>
+                    <p id="expireMsg" class="invisible">Your session has expired. Please login again.</p>
+                    <p id="blockerMsg" class="invisible">Please disable Popup Blocker and Refresh page.</p>
+                    <p id="customMsg" class="invisible"></p>
+                    <div class="buttonHolder">
+                        <button id="popupclose" class="button small-button blue-gradient">Ok</button>
+                    </div>
+                </div>
+            </div>
+            <div id="popups">
+                <div id="activeexceed" class="popHolder invisible">
+                    <p>You have exceeded the maximum number of active sessions. Click continue to stop your active
+                        sessions.</p>
+                    <div class="buttonHolder">
+                        <button id="continueActiveExceed"
+                                class="button small-button blue-gradient">Continue</button>
+                        <button id="closePopup"
+                                class="button small-button blue-gradient close-popup">Cancel</button>
+                    </div>
+                </div>
+                <div id="activesession" class="popHolder activesessionbox" style="display: none">
+                    <a href="#" id="closePopup" class="ovelay-close close-popup">x</a>
+                    <p id="popupErrormsg" style="color:red;display:none;">
+                        Please select atleast one session to stop.
+                    </p>
+                    <h2>Active Sessions</h2>
+                    <table cellspacing="0">
+                        <tbody>
+                        <tr>
+                            <th class="overlay-acth1"></th>
+                            <th class="overlay-acth2">Content Title</th>
+                            <th class="overlay-acth3">Date/Time Activated</th>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="scrollarea">
+                        <table cellspacing="0" id="activeList">
+                        </table>
+                    </div>
+                    <p>Click continue to stop selected sessions.</p>
+                    <button id="continueKillActiveSession"
+                            class="button small-button blue-gradient">Continue</button>
+                    <button id="closePopup" class="button small-button blue-gradient close-popup">Cancel</button>
+                </div>
+            </div>
+            <div id="page">
+                <div role="main">
+                    <section id="introduction">
+                        <h2>Introduction</h2>
+                        <p>Using the Cisco Learning Network Space you can view, manage, and control your Cisco
+                            digital learning
+                            content. Links are also available to download, redeem, and purchase new training and
+                            preparation materials, which can be read both online and
+                            offline (with the Cisco Reader). In addition, you can also sync content from your
+                            personal computer to other linked devices.Organize and
+                            customize your library to drive your learning path.</p>
+                    </section>
+                    <div id="errmessage" style="display: none;">
+                        <div id="thanks">
+                            <p>
+                                <font class="error" color="red"></font>
+                                <font class="success" color="green"></font>
+                            </p>
+                        </div>
+                    </div>
+                    <div id="blankAccessCodeErrMessage" style="display: none">
+                        <div id="thanks">
+                            <p>
+                                <font color="red">You must specify the Access Code.</font>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="books-list two-column option2">
+                        <div class="tabs" id="instructorId" style="display: none">
+                            <div class="tab-item selected" id="courseGet">My Courses</div>
+                            <div class="tab-item" id="entitlements">My Entitlements</div>
+                        </div>
+                        <h2 id="studentId">My Content</h2>
+                        <div class="table-content" style="display:none">
+                            <span class="col-large">Book Title</span>
+                            <span class="col-small">Version</span>
+                            <span class="col-medium"></span>
+                        </div>
+                        <div class="data-table-content">
+                            <span style="width: 42%;display: inline-block;">Book Title</span>
+                            <span style="display:inline-block;width:29%;">Version</span>
+                            <span style="display: inline-block;width: 22%;">Accessed</span>
+                        </div>
+                        <div class="accordion" id="content-list-wrapper">
+                            <div id="noBookContainer" class="invisible">
+                                <div class="accordion-section">
+                                    <div class="accordion-section-content">
+                                        <div class="list">
+                                            <center class="linkClick" href="#" value="sws"
+                                                    style="color: #666;font-weight: bold;font-size: 13px;">No Books
+                                                Available!</center>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="bookList">
+                            </div>
+                            <div>
+                                <table id="myentitlement" width="100%"
+                                       class="dataTable table table-striped table-bordered"
+                                       style="background-color: #F0ECEC;display:none;">
+                                    <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Book Title</th>
+                                        <th>Version</th>
+                                        <th>Accessed</th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <div id='myContentList'>
+                                <table id="mycontent" width="100%"
+                                       class="dataTable table table-striped table-bordered"
+                                       style="background-color: #F0ECEC;display:none;">
+                                    <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Book Title</th>
+                                        <th>Version</th>
+                                        <th>Accessed</th>
+                                    </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                            <!-- include here book-list-new, entitlment-list-new, supplemental-files-list and search_label -->
+
+                            <!-- <div data-th-include="templates :: book-list-new"></div>
+                            <div data-th-include="templates :: entitlement-list-new"></div>
+                            <div data-th-include="templates :: supplemental-files-list"></div>
+                            <div data-th-include="templates :: search_label"></div> -->
+                        </div>
+                    </div>
+                    <a href="https://learningnetwork.cisco.com/community/learning_center/self_assessments"
+                       class="content-banner-link">
+                        <div class="content-banner1">
+                            <span class="info">Learning@Cisco Self-Assessments</span>
+                            <span class="msg">Want to know what you know?</span>
+                            <span class="msg">Take a free Self-Assessment.</span>
+                            <div class="btn-text">Access Now</div>
+                        </div>
+                    </a>
+                </div>
+                <div id="sidebar">
+                    <form id="code-redemption" method="post" action="/redeem">
+                        <h2>Looking to Begin a New Course?</h2>
+                        <label for="access-code">Redeem your access code here:</label>
+                        <input id="accessCode" type="text" name="accessCode" />
+                        <button type="submit" class="button small-button dark-grey-gradient" id="redeem"
+                                value="Submit" style="text-shadow: none;">Submit</button>
+                    </form>
+                    <section id="download-app">
+                        <h2>Study Offline with our Free eReader Application</h2>
+                        <p>Your course materials, progress, notes, bookmarks, and highlights can be seamlessly
+                            synced and backed up to
+                            our servers and can be accessed from any supported web browser.</p>
+                        <h2 class="available-soon">
+                            <a href="/content?target=windows-app" style="color: white">Download Application</a>
+                        </h2>
+                    </section>
+                    <ul class="pills">
+                        <a href="/feedback" class="grey-gradient">Give Feedback</a>
+                    </ul>
+                    <ul class="pills">
+                        <a href="/help" class="grey-gradient">Help Desk</a>
+                    </ul>
+                    <ul class="pills">
+                        <a href="https://developer.cisco.com/docs/learningspace/user/#!clms-clnstore-and-clnspace-terms-of-use-and-eula"
+                           target="_blank" class="grey-gradient" id="EULAPage">End
+                            User License Agreement</a>
+                    </ul>
+                </div>
+                <div id="reader"></div>
+            </div>
+        </div>
+    </div>
+    <!-- <div data-th-include="footer :: footer"></div> -->
+    <!-- Include footer here -->
+</div>
+<div class="updateOverlay"></div>
+<div id="bookUpdatePopup" class="book-popup update-overlay-popup">
+    <div class="confirm-popup-head">
+        <h2>Update Available</h2>
+        <span>Version <span class="book-version"></span>is now available</span>
+        <span class="popup-close"></span>
+    </div>
+    <p>
+        An updated version
+        <span class="book-version"></span>
+        is now available. Click <strong>Update</strong> to get the latest version of the book in your online
+        <strong>My Content</strong> library. All of your notes, highlights, and bookmarks will be synchronized with
+        the updated online version.
+    </p>
+    <p>If you have downloaded a version to your mobile device (iOS/Android/Windows), open your Cisco eReader app and
+        synchronize to get the most current content.</p>
+    <span class="update"> Update </span>
+    <span class="thanks">No Thanks</span>
+</div>
+<div id="bookSyncWarning" class="book-popup update-overlay-popup">
+    <div class="confirm-popup-head">
+        <h2>Update Available</h2>
+        <span>Version <span class="book-version"></span> is now available</span>
+        <span class="popup-close"></span>
+    </div>
+    <p>
+        An updated version
+        <span class="book-version"></span>
+        is now available. Click <strong>Update</strong> to get the latest version of the book in your online
+        <strong>My Content</strong> library. A major version represents a new course with significant changes.
+        You will retain your existing book; however notes, highlights, and bookmarks will not be synchronized with
+        the new major version.
+    </p>
+    <p>If you have downloaded a version to your mobile device (iOS/Android/Windows), open your Cisco eReader app and
+        synchronize to get the most current content.</p>
+    <span class="update"> Update </span>
+    <span class="thanks">No Thanks</span>
+</div>
+<div id="redeemConfirmation" class="update-overlay-popup">
+    <div class="confirm-popup-head">
+        <h2>Redeem Access Code</h2>
+        <span>Content access will be associated with CCO ID <strong>tapbansa</strong></span>
+        <span class="popup-close"></span>
+    </div>
+    <p></p>
+    <strong>Terms of Redemption</strong>
+    <div class="list-container">
+        <ul>
+            <li>Once redeemed, content access is permitted <strong>only</strong> for your CCO ID
+                <strong>tapbansa</strong>.
+            </li>
+            <li>Once redeemed, content access is <strong>not</strong> transferrable to another CCO ID.</li>
+            <li>I will remember my CCO ID account password and keep the email address associated with my account
+                up-to-date. If I forget my password and no longer have access to my email address, then <strong>I
+                    will permanently lose access to my course materials</strong>.</li>
+            <li>An access code can only be submitted once for redemption and cannot be reused <strong>after
+                successful redemption</strong>.</li>
+        </ul>
+        <label>
+            <input type="checkbox" style="margin-right:5px" id="acceptTerms" /><span>I have read and agree to the
+                    Terms of Redemption.</span>
+        </label>
+    </div>
+    <span class="update disabled">Redeem</span>
+    <span class="thanks">Cancel</span>
+</div>
+
+<div id="supplementalFilePopup" class="update-overlay-popup update-overlay-popup-supplemental-file">
+
+    <div class="confirm-popup-head" style="border: none;">
+        <h2>Supplemental Files</h2>
+        <span class="popup-close" id="supplementalFilepopupclose"></span>
+    </div>
+    <table cellspacing="0" class="supplementalFileTable cell-border stripe" id="supplementalFileTable" width="100%"
+           style="border: 1px solid #c7c1c1;">
+    </table>
+</div>
+<script type="text/javascript" src="https://www.cisco.com/c/dam/cdc/t/ctm.js"></script>
+<!-- <script>
+
+
+    $(document).ready(function() {
+        console.log({{.UserName}})
+        var userName = {{.UserName}}
+        if(userName != null && userName.length > 0){
+
+            $("#welcome-header-div").show();
+            $("#welcome-header-login-div").hide();
+            $("#welcome-header").text("Welcome, "+{{.UserFullName}})
+            $("#ccoid-span").text("("+{{.CCOID}}+")")
+            $(".username").val({{.UserName}})
+            $(".accesscode").val({{.AccessCode}})
+        }else{
+            console.log("username is found."+userName)
+        }
+
+    });
+
+
+
+</script> -->
+</body>
+
+</html>
+{{ end }}
