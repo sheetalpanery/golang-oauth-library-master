@@ -3,10 +3,12 @@ package models
 import "time"
 
 type UserHomePageInfo struct {
-	userName string
-	ccoid string
-	accessCode string
+	UserName     string
+	CCOID        string
+	AccessCode   string
+	UserFullName string
 }
+
 type MyCourses struct {
 	ModuleMasterId      int         `json:"moduleMasterId"`
 	ModuleTitle         string      `json:"moduleTitle"`
@@ -57,6 +59,3 @@ type MyEntitlements struct {
 	Instructor          bool        `json:"instructor"`
 	IsLatest            bool        `json:"isLatest"`
 }
-
-
-

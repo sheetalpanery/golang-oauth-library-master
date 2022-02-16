@@ -22,6 +22,7 @@ func init() {
 
 func init() {
 	var err error
+	service.Init()
 	handler.Tmpl, err = template.ParseGlob("public/*")
 	if err != nil {
 		panic(err.Error())
@@ -39,11 +40,14 @@ func main() {
 	r.HandleFunc("/getAccessTokenByCode", handler.GenerateAccessToken).Methods("GET")
 	r.HandleFunc("/callback", handler.GetUserInfoByAuthorizationCode).Methods("GET")
 	r.HandleFunc("/getuserinfo", handler.GetUserInformationByAccessToken).Methods("POST")
+	// r.HandleFunc("/admin/setUserSession", handler.SetDataInAdmin).Methods("POST")
 	r.HandleFunc("/request", handler.RequestHandler).Methods("GET")
 	r.HandleFunc("/", handler.HomePageHandle).Methods("GET")
 	r.HandleFunc("/login", handler.LoginHandler).Methods("GET")
+	r.HandleFunc("/logout", handler.LogOutHandler).Methods("GET")
 	r.HandleFunc("/content", handler.MyContent).Methods("GET")
 	r.HandleFunc("/api/modules", handler.MyCourses).Methods("GET")
+
 	r.HandleFunc("/api/entitlements", handler.MyEntitlements).Methods("GET")
 
 	r.PathPrefix("/static/").Handler(http.StripPrefix("/static/", http.FileServer(http.Dir("./static/"))))

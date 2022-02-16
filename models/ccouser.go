@@ -1,37 +1,35 @@
 package models
 
-type User struct {
-CCOUser
+type CCOUser struct {
+	SerialVersionUID string `json:"serial_version_uid"`
+	Ccoid            string `json:"ccoid"`
+	CcouserMasterId  string `json:"ccouser_master_id"`
+	Userid           string `json:"userid"`
+	Email            string `json:"email"`
+	ContactType      string `json:"contact_type"`
+	FirstName        string `json:"first_name"`
+	LastName         string `json:"last_name"`
+	FullName         string `json:"full_name"`
+	PhoneNumber      string `json:"phone_number"`
+	CompanyInfo      string `json:"companyinfo"`
+	Country          string `json:"country"`
+	AddrLine1        string
+	AddrLine2        string
+	City             string
+	Zipcode          string
+	JobRole          string
+	JobLevel         string
+	State            string
+	Region           string
+	Active           bool
+	SecurityPassword string
+	Weightage        int
+	AutoScreenName   string
+	Status           string
+	Opentoken        string
+	Instructor       bool
 }
 
-type CCOUser struct {
-	serialVersionUID string
-	ccoid            int
-	ccouserMasterId  string
-	userid           string
-	email            string
-	contactType      string
-	firstName        string
-	lastName         string
-	phoneNumber string
-	companyInfo string
-	country string
-	addrLine1 string
-	addrLine2 string
-	city string
-	zipcode string
-	jobRole string
-	jobLevel string
-	state string
-	region string
-	active bool
-	security_password string
-	weightage  int
-	autoScreenName string
-	status string
-	opentoken string
-	instructor bool
-}
 //public class CCOUser implements UserDetails {
 //private int ccouserMasterId;
 //private Long userid;

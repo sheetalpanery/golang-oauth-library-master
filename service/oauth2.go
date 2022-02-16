@@ -3,12 +3,13 @@ package service
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/spf13/cast"
-	"github.com/spf13/viper"
 	"golang-oauth-library-master/logger"
 	"io/ioutil"
 	"net/http"
 	"strings"
+
+	"github.com/spf13/cast"
+	"github.com/spf13/viper"
 )
 
 var (
@@ -91,6 +92,7 @@ func GetUserInfo(Accesstoken string) (userInfo interface{}, err error) {
 		return
 	}
 	req.Header.Add("Authorization", "Bearer "+Accesstoken)
+	fmt.Println("Token", "Bearer "+Accesstoken)
 
 	res, err := client.Do(req)
 	if err != nil {

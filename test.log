@@ -8,3 +8,428 @@
 2022-01-18T10:36:34.575+0530	DEBUG	handler/auth.go:31	tring to hit get request for https://cloudsso-test.cisco.com/as/authorization.oauth2?response_type=code&client_id=_WSXUserSTG_OAUTHNEW_&scope=%20openid%20profile%20email%20phone&redirect_uri=http://localhost:8080/callback
 2022-01-18T10:58:38.849+0530	DEBUG	handler/auth.go:31	tring to hit get request for https://cloudsso-test.cisco.com/as/authorization.oauth2?response_type=code&client_id=_WSXUserSTG_OAUTHNEW_&scope=%20openid%20profile%20email%20phone&redirect_uri=http://localhost:8080/callback
 2022-01-18T11:09:47.585+0530	DEBUG	handler/auth.go:31	tring to hit get request for https://cloudsso-test.cisco.com/as/authorization.oauth2?response_type=code&client_id=_WSXUserSTG_OAUTHNEW_&scope=%20openid%20profile%20email%20phone&redirect_uri=http://localhost:8080/callback
+2022-02-14T10:13:07.900+0530	ERROR	service/admin.go:56	Post "https://localhost:8080/admin/rest/api/users/getuser": http: server gave HTTP response to HTTPS client
+2022-02-14T10:28:04.455+0530	ERROR	service/admin.go:56	Post "https://localhost:8080/admin/rest/api/users/getuser": http: server gave HTTP response to HTTPS client
+2022-02-14T10:28:28.643+0530	ERROR	service/admin.go:56	Post "https://localhost:8080/admin/rest/api/users/getuser": http: server gave HTTP response to HTTPS client
+2022-02-14T10:59:54.140+0530	ERROR	service/admin.go:56	Post "https://localhost:8080/admin/rest/api/users/getuser": http: server gave HTTP response to HTTPS client
+2022-02-15T12:35:25.821+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T12:39:03.050+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T12:39:04.482+0530	INFO	service/admin.go:41	Remote user&{                   false  0    false}
+2022-02-15T12:39:04.482+0530	INFO	service/admin.go:42	Error,<nil>
+2022-02-15T12:40:47.096+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T12:40:48.208+0530	INFO	service/admin.go:55	CCOUserFromAdmin&{                   false  0    false}
+2022-02-15T12:40:48.208+0530	INFO	service/admin.go:56	Err<nil>
+2022-02-15T12:40:48.666+0530	INFO	service/admin.go:41	Remote user&{                   false  0    false}
+2022-02-15T12:40:48.666+0530	INFO	service/admin.go:42	Error,<nil>
+2022-02-15T12:43:45.084+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T12:43:46.205+0530	INFO	service/admin.go:127	res{0xc0001d8a80}
+2022-02-15T12:43:46.206+0530	INFO	service/admin.go:128	err<nil>
+2022-02-15T12:43:46.206+0530	INFO	service/admin.go:55	CCOUserFromAdmin&{                   false  0    false}
+2022-02-15T12:43:46.206+0530	INFO	service/admin.go:56	Err<nil>
+2022-02-15T12:43:46.477+0530	INFO	service/admin.go:41	Remote user&{                   false  0    false}
+2022-02-15T12:43:46.477+0530	INFO	service/admin.go:42	Error,<nil>
+2022-02-15T12:44:59.836+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T12:45:00.692+0530	INFO	service/admin.go:132	resBody[123 34 101 114 114 111 114 34 58 34 117 110 97 117 116 104 111 114 105 122 101 100 34 44 34 101 114 114 111 114 95 100 101 115 99 114 105 112 116 105 111 110 34 58 34 70 117 108 108 32 97 117 116 104 101 110 116 105 99 97 116 105 111 110 32 105 115 32 114 101 113 117 105 114 101 100 32 116 111 32 97 99 99 101 115 115 32 116 104 105 115 32 114 101 115 111 117 114 99 101 34 125]
+2022-02-15T12:45:00.692+0530	INFO	service/admin.go:55	CCOUserFromAdmin&{                   false  0    false}
+2022-02-15T12:45:00.692+0530	INFO	service/admin.go:56	Err<nil>
+2022-02-15T12:45:01.273+0530	INFO	service/admin.go:41	Remote user&{                   false  0    false}
+2022-02-15T12:45:01.273+0530	INFO	service/admin.go:42	Error,<nil>
+2022-02-15T12:46:02.682+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T12:46:03.912+0530	INFO	service/admin.go:132	resBody{"error":"unauthorized","error_description":"Full authentication is required to access this resource"}
+2022-02-15T12:46:03.915+0530	INFO	service/admin.go:55	CCOUserFromAdmin&{                   false  0    false}
+2022-02-15T12:46:03.915+0530	INFO	service/admin.go:56	Err<nil>
+2022-02-15T12:46:04.425+0530	INFO	service/admin.go:41	Remote user&{                   false  0    false}
+2022-02-15T12:46:04.425+0530	INFO	service/admin.go:42	Error,<nil>
+2022-02-15T12:47:59.097+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T12:47:59.970+0530	ERROR	service/admin.go:123	<nil>
+2022-02-15T12:47:59.970+0530	INFO	service/admin.go:55	CCOUserFromAdmin<nil>
+2022-02-15T12:47:59.970+0530	INFO	service/admin.go:56	Err<nil>
+2022-02-15T12:48:00.242+0530	INFO	service/admin.go:41	Remote user&{                   false  0    false}
+2022-02-15T12:48:00.242+0530	INFO	service/admin.go:42	Error,<nil>
+2022-02-15T12:49:18.664+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T12:49:19.534+0530	ERROR	service/admin.go:122	status code401
+2022-02-15T12:49:19.535+0530	ERROR	service/admin.go:124	<nil>
+2022-02-15T12:49:19.535+0530	INFO	service/admin.go:55	CCOUserFromAdmin<nil>
+2022-02-15T12:49:19.535+0530	INFO	service/admin.go:56	Err<nil>
+2022-02-15T12:49:19.809+0530	INFO	service/admin.go:41	Remote user&{                   false  0    false}
+2022-02-15T12:49:19.809+0530	INFO	service/admin.go:42	Error,<nil>
+2022-02-15T12:53:28.234+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T12:53:29.075+0530	ERROR	service/admin.go:123	<nil>
+2022-02-15T12:53:29.075+0530	INFO	service/admin.go:55	CCOUserFromAdmin<nil>
+2022-02-15T12:53:29.076+0530	INFO	service/admin.go:56	Err<nil>
+2022-02-15T12:53:29.346+0530	ERROR	service/admin.go:156	<nil>
+2022-02-15T12:53:29.347+0530	ERROR	service/admin.go:62	Error while creating user in admin<nil>
+2022-02-15T12:53:29.347+0530	INFO	service/admin.go:41	Remote user<nil>
+2022-02-15T12:53:29.347+0530	INFO	service/admin.go:42	Error,<nil>
+2022-02-15T12:54:32.215+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T12:54:33.057+0530	ERROR	service/admin.go:123	<nil>
+2022-02-15T12:54:33.057+0530	INFO	service/admin.go:55	CCOUserFromAdmin<nil>
+2022-02-15T12:54:33.057+0530	INFO	service/admin.go:56	Err<nil>
+2022-02-15T12:54:33.333+0530	ERROR	service/admin.go:156	<nil>
+2022-02-15T12:54:33.333+0530	ERROR	service/admin.go:62	Error while creating user in admin<nil>
+2022-02-15T12:54:33.333+0530	INFO	service/admin.go:41	Remote user<nil>
+2022-02-15T12:54:33.333+0530	INFO	service/admin.go:42	Error,<nil>
+2022-02-15T12:56:26.146+0530	INFO	service/admin.go:32	Created cco user{ sheetash   sheetash@cisco.com    0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T12:56:27.026+0530	ERROR	service/admin.go:119	<nil>
+2022-02-15T12:56:27.027+0530	INFO	service/admin.go:51	CCOUserFromAdmin<nil>
+2022-02-15T12:56:27.027+0530	INFO	service/admin.go:52	Err<nil>
+2022-02-15T12:56:27.306+0530	ERROR	service/admin.go:152	<nil>
+2022-02-15T12:56:27.307+0530	ERROR	service/admin.go:58	Error while creating user in admin<nil>
+2022-02-15T12:56:27.307+0530	ERROR	service/admin.go:41	Error while creating or updating user in admin
+2022-02-15T12:56:27.307+0530	INFO	service/admin.go:42	Sending default ccoUser{ sheetash   sheetash@cisco.com    0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T14:05:04.242+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:05:04.248+0530	FATAL	service/session.go:26	Error while getting redis data for session.
+2022-02-15T14:05:16.598+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:05:16.605+0530	FATAL	service/session.go:26	Error while getting redis data for session.
+2022-02-15T14:05:35.381+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:05:35.406+0530	FATAL	service/session.go:26	Error while getting redis data for session.
+2022-02-15T14:06:26.101+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:06:26.119+0530	FATAL	service/session.go:26	Error while getting redis data for session.
+2022-02-15T14:06:38.444+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:06:38.452+0530	FATAL	service/session.go:26	Error while getting redis data for session.
+2022-02-15T14:09:16.352+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:09:16.379+0530	FATAL	service/session.go:26	Error while getting redis data for session.
+2022-02-15T14:13:03.194+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:13:03.201+0530	FATAL	service/session.go:26	Error while getting redis data for session.
+2022-02-15T14:13:52.851+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:13:52.865+0530	FATAL	service/session.go:26	Error while getting redis data for session.
+2022-02-15T14:15:28.046+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:15:28.061+0530	FATAL	service/session.go:26	Error while getting redis data for session.
+2022-02-15T14:17:17.189+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:17:17.229+0530	ERROR	service/session.go:26	Error while getting redis data for session.
+2022-02-15T14:17:17.230+0530	INFO	handler/handler.go:36	user{                    false  0    false}
+2022-02-15T14:17:17.230+0530	INFO	handler/handler.go:37	errcould not find key in redis
+2022-02-15T14:17:17.230+0530	ERROR	handler/handler.go:39	No user found in session with session idsheetash@cisco.com
+2022-02-15T14:18:04.056+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T14:18:05.070+0530	ERROR	service/admin.go:120	<nil>
+2022-02-15T14:18:05.071+0530	INFO	service/admin.go:52	CCOUserFromAdmin<nil>
+2022-02-15T14:18:05.071+0530	INFO	service/admin.go:53	Err<nil>
+2022-02-15T14:18:05.577+0530	ERROR	service/admin.go:153	<nil>
+2022-02-15T14:18:05.577+0530	ERROR	service/admin.go:59	Error while creating user in admin<nil>
+2022-02-15T14:18:05.577+0530	ERROR	service/admin.go:42	Error while creating or updating user in admin
+2022-02-15T14:18:05.577+0530	INFO	service/admin.go:43	Sending default ccoUser{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T14:18:42.850+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:18:42.853+0530	ERROR	service/session.go:26	Error while getting redis data for session.
+2022-02-15T14:18:42.853+0530	INFO	handler/handler.go:36	user{                    false  0    false}
+2022-02-15T14:18:42.854+0530	INFO	handler/handler.go:37	errcould not find key in redis
+2022-02-15T14:18:42.854+0530	ERROR	handler/handler.go:39	No user found in session with session idsheetash@cisco.com
+2022-02-15T14:22:24.116+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:22:24.134+0530	ERROR	service/session.go:25	Error while getting redis data for session.
+2022-02-15T14:22:24.135+0530	INFO	handler/handler.go:36	user{                    false  0    false}
+2022-02-15T14:22:24.135+0530	INFO	handler/handler.go:37	errcould not find key in redis
+2022-02-15T14:22:24.135+0530	ERROR	handler/handler.go:39	No user found in session with session idsheetash@cisco.com
+2022-02-15T14:22:59.128+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T14:23:00.090+0530	ERROR	service/admin.go:120	<nil>
+2022-02-15T14:23:00.090+0530	INFO	service/admin.go:52	CCOUserFromAdmin<nil>
+2022-02-15T14:23:00.090+0530	INFO	service/admin.go:53	Err<nil>
+2022-02-15T14:23:00.589+0530	ERROR	service/admin.go:153	<nil>
+2022-02-15T14:23:00.590+0530	ERROR	service/admin.go:59	Error while creating user in admin<nil>
+2022-02-15T14:23:00.590+0530	ERROR	service/admin.go:42	Error while creating or updating user in admin
+2022-02-15T14:23:00.590+0530	INFO	service/admin.go:43	Sending default ccoUser{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T14:23:00.604+0530	INFO	communication/redis.go:56	Sesion data saved in redis with key
+2022-02-15T14:26:25.459+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:26:25.479+0530	ERROR	service/session.go:25	Error while getting redis data for session.
+2022-02-15T14:26:25.480+0530	INFO	handler/handler.go:36	user{                    false  0    false}
+2022-02-15T14:26:25.481+0530	INFO	handler/handler.go:37	errcould not find key in redis
+2022-02-15T14:26:25.481+0530	ERROR	handler/handler.go:39	No user found in session with session idsheetash@cisco.com
+2022-02-15T14:26:36.798+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T14:26:37.753+0530	ERROR	service/admin.go:120	<nil>
+2022-02-15T14:26:37.754+0530	INFO	service/admin.go:52	CCOUserFromAdmin<nil>
+2022-02-15T14:26:37.754+0530	INFO	service/admin.go:53	Err<nil>
+2022-02-15T14:26:38.547+0530	ERROR	service/admin.go:153	<nil>
+2022-02-15T14:26:38.547+0530	ERROR	service/admin.go:59	Error while creating user in admin<nil>
+2022-02-15T14:26:38.547+0530	ERROR	service/admin.go:42	Error while creating or updating user in admin
+2022-02-15T14:26:38.547+0530	INFO	service/admin.go:43	Sending default ccoUser{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T14:26:38.550+0530	INFO	communication/redis.go:56	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T14:26:44.089+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:26:44.126+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:26:45.461+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:26:50.614+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:27:20.733+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:28:20.863+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:33:35.304+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:33:35.333+0530	ERROR	service/session.go:27	Error while getting redis data for session.
+2022-02-15T14:33:35.334+0530	INFO	handler/handler.go:36	user{                    false  0    false}
+2022-02-15T14:33:35.334+0530	INFO	handler/handler.go:37	errcould not find key in redis
+2022-02-15T14:33:35.334+0530	ERROR	handler/handler.go:39	No user found in session with session idsheetash@cisco.com
+2022-02-15T14:33:44.012+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T14:33:45.196+0530	ERROR	service/admin.go:107	<nil>
+2022-02-15T14:33:45.196+0530	INFO	service/admin.go:52	CCOUserFromAdmin<nil>
+2022-02-15T14:33:45.196+0530	INFO	service/admin.go:53	Err<nil>
+2022-02-15T14:33:45.696+0530	ERROR	service/admin.go:140	<nil>
+2022-02-15T14:33:45.696+0530	ERROR	service/admin.go:59	Error while creating user in admin<nil>
+2022-02-15T14:33:45.697+0530	ERROR	service/admin.go:42	Error while creating or updating user in admin
+2022-02-15T14:33:45.697+0530	INFO	service/admin.go:43	Sending default ccoUser{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T14:33:45.705+0530	INFO	communication/redis.go:56	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T14:33:45.705+0530	INFO	service/session.go:18	Session saved in Redis with session Id:sheetash@cisco.com
+2022-02-15T14:33:45.705+0530	INFO	service/session.go:19	Session saved in Redis:{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T14:35:44.019+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:35:45.125+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:35:50.213+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:36:06.218+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:36:36.310+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:38:51.374+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:38:51.405+0530	INFO	service/session.go:25	Redis Data:<nil>
+2022-02-15T14:38:51.406+0530	ERROR	service/session.go:27	Error while getting redis data for session.
+2022-02-15T14:38:51.407+0530	INFO	handler/handler.go:36	user{                    false  0    false}
+2022-02-15T14:38:51.407+0530	INFO	handler/handler.go:37	errcould not find key in redis
+2022-02-15T14:38:51.407+0530	ERROR	handler/handler.go:39	No user found in session with session idsheetash@cisco.com
+2022-02-15T14:38:56.383+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:38:56.387+0530	INFO	service/session.go:25	Redis Data:<nil>
+2022-02-15T14:38:56.388+0530	ERROR	service/session.go:27	Error while getting redis data for session.
+2022-02-15T14:38:56.388+0530	INFO	handler/handler.go:36	user{                    false  0    false}
+2022-02-15T14:38:56.388+0530	INFO	handler/handler.go:37	errcould not find key in redis
+2022-02-15T14:38:56.388+0530	ERROR	handler/handler.go:39	No user found in session with session idsheetash@cisco.com
+2022-02-15T14:39:23.322+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T14:39:24.349+0530	ERROR	service/admin.go:107	<nil>
+2022-02-15T14:39:24.349+0530	INFO	service/admin.go:52	CCOUserFromAdmin<nil>
+2022-02-15T14:39:24.349+0530	INFO	service/admin.go:53	Err<nil>
+2022-02-15T14:39:24.954+0530	ERROR	service/admin.go:140	<nil>
+2022-02-15T14:39:24.955+0530	ERROR	service/admin.go:59	Error while creating user in admin<nil>
+2022-02-15T14:39:24.955+0530	ERROR	service/admin.go:42	Error while creating or updating user in admin
+2022-02-15T14:39:24.955+0530	INFO	service/admin.go:43	Sending default ccoUser{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T14:39:24.960+0530	INFO	communication/redis.go:56	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T14:39:30.438+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:39:30.445+0530	INFO	service/session.go:25	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:]
+2022-02-15T14:39:30.471+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:39:30.486+0530	INFO	service/session.go:25	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:]
+2022-02-15T14:39:31.624+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:39:31.627+0530	INFO	service/session.go:25	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:]
+2022-02-15T14:39:36.727+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T14:39:36.739+0530	INFO	service/session.go:25	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:]
+2022-02-15T16:05:07.654+0530	INFO	handler/handler.go:33	cookie:session-id=
+2022-02-15T16:05:07.660+0530	INFO	service/session.go:26	Redis Data:<nil>
+2022-02-15T16:05:07.661+0530	ERROR	service/session.go:28	Error while getting redis data for session.
+2022-02-15T16:05:07.661+0530	INFO	handler/handler.go:36	user{                    false  0    false}
+2022-02-15T16:05:07.661+0530	INFO	handler/handler.go:37	errcould not find key in redis
+2022-02-15T16:05:07.661+0530	ERROR	handler/handler.go:39	No user found in session with session id
+2022-02-15T16:05:23.711+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:05:24.922+0530	ERROR	service/admin.go:107	<nil>
+2022-02-15T16:05:24.922+0530	INFO	service/admin.go:52	CCOUserFromAdmin<nil>
+2022-02-15T16:05:24.922+0530	INFO	service/admin.go:53	Err<nil>
+2022-02-15T16:05:25.478+0530	ERROR	service/admin.go:140	<nil>
+2022-02-15T16:05:25.478+0530	ERROR	service/admin.go:59	Error while creating user in admin<nil>
+2022-02-15T16:05:25.478+0530	ERROR	service/admin.go:42	Error while creating or updating user in admin
+2022-02-15T16:05:25.478+0530	INFO	service/admin.go:43	Sending default ccoUser{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:05:25.480+0530	INFO	communication/redis.go:56	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T16:05:32.597+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:05:32.598+0530	INFO	service/session.go:26	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:]
+2022-02-15T16:05:32.598+0530	INFO	handler/handler.go:36	user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:05:32.598+0530	INFO	handler/handler.go:37	err<nil>
+2022-02-15T16:07:09.445+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:07:09.446+0530	INFO	service/session.go:26	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:]
+2022-02-15T16:07:09.446+0530	INFO	handler/handler.go:36	user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:07:09.446+0530	INFO	handler/handler.go:37	err<nil>
+2022-02-15T16:07:09.446+0530	INFO	handler/handler.go:48	CCOUser CCOId:sheetash
+2022-02-15T16:07:18.108+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:07:18.109+0530	INFO	service/session.go:26	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:]
+2022-02-15T16:07:18.109+0530	INFO	handler/handler.go:36	user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:07:18.109+0530	INFO	handler/handler.go:37	err<nil>
+2022-02-15T16:07:18.109+0530	INFO	handler/handler.go:48	CCOUser CCOId:sheetash
+2022-02-15T16:07:25.196+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:07:25.197+0530	INFO	service/session.go:26	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:]
+2022-02-15T16:07:25.197+0530	INFO	handler/handler.go:36	user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:07:25.197+0530	INFO	handler/handler.go:37	err<nil>
+2022-02-15T16:07:25.197+0530	INFO	handler/handler.go:48	CCOUser CCOId:sheetash
+2022-02-15T16:08:43.929+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:08:43.931+0530	INFO	service/session.go:26	Redis Data:<nil>
+2022-02-15T16:08:43.931+0530	ERROR	service/session.go:28	Error while getting redis data for session.
+2022-02-15T16:08:43.931+0530	INFO	handler/handler.go:36	user{                    false  0    false}
+2022-02-15T16:08:43.931+0530	INFO	handler/handler.go:37	errcould not find key in redis
+2022-02-15T16:08:43.931+0530	ERROR	handler/handler.go:39	No user found in session with session idsheetash@cisco.com
+2022-02-15T16:08:43.931+0530	INFO	handler/handler.go:48	CCOUser CCOId:
+2022-02-15T16:10:05.909+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:10:05.911+0530	INFO	service/session.go:26	Redis Data:<nil>
+2022-02-15T16:10:05.912+0530	ERROR	service/session.go:28	Error while getting redis data for session.
+2022-02-15T16:10:05.912+0530	INFO	handler/handler.go:36	user{                    false  0    false}
+2022-02-15T16:10:05.912+0530	INFO	handler/handler.go:37	errcould not find key in redis
+2022-02-15T16:10:05.912+0530	ERROR	handler/handler.go:39	No user found in session with session idsheetash@cisco.com
+2022-02-15T16:10:05.912+0530	INFO	handler/handler.go:48	CCOUser CCOId:
+2022-02-15T16:10:16.979+0530	INFO	service/admin.go:33	Created cco user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:10:17.921+0530	ERROR	service/admin.go:107	<nil>
+2022-02-15T16:10:17.921+0530	INFO	service/admin.go:52	CCOUserFromAdmin<nil>
+2022-02-15T16:10:17.921+0530	INFO	service/admin.go:53	Err<nil>
+2022-02-15T16:10:18.199+0530	ERROR	service/admin.go:140	<nil>
+2022-02-15T16:10:18.200+0530	ERROR	service/admin.go:59	Error while creating user in admin<nil>
+2022-02-15T16:10:18.200+0530	ERROR	service/admin.go:42	Error while creating or updating user in admin
+2022-02-15T16:10:18.200+0530	INFO	service/admin.go:43	Sending default ccoUser{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:10:18.200+0530	INFO	communication/redis.go:56	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T16:10:30.765+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:10:30.766+0530	INFO	service/session.go:26	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:]
+2022-02-15T16:10:30.766+0530	INFO	handler/handler.go:36	user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:10:30.766+0530	INFO	handler/handler.go:37	err<nil>
+2022-02-15T16:10:30.766+0530	INFO	handler/handler.go:48	CCOUser CCOId:
+2022-02-15T16:11:21.763+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:11:21.766+0530	INFO	service/session.go:26	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:]
+2022-02-15T16:11:21.766+0530	INFO	handler/handler.go:36	user{ sheetash   sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:11:21.766+0530	INFO	handler/handler.go:37	err<nil>
+2022-02-15T16:11:21.766+0530	INFO	handler/handler.go:48	CCOUser CCOId:
+2022-02-15T16:11:28.011+0530	INFO	service/admin.go:34	Created cco user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:11:29.121+0530	ERROR	service/admin.go:108	<nil>
+2022-02-15T16:11:29.121+0530	INFO	service/admin.go:53	CCOUserFromAdmin<nil>
+2022-02-15T16:11:29.121+0530	INFO	service/admin.go:54	Err<nil>
+2022-02-15T16:11:29.422+0530	ERROR	service/admin.go:141	<nil>
+2022-02-15T16:11:29.422+0530	ERROR	service/admin.go:60	Error while creating user in admin<nil>
+2022-02-15T16:11:29.422+0530	ERROR	service/admin.go:43	Error while creating or updating user in admin
+2022-02-15T16:11:29.422+0530	INFO	service/admin.go:44	Sending default ccoUser{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:11:29.422+0530	INFO	communication/redis.go:56	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T16:11:36.362+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:11:36.364+0530	INFO	service/session.go:26	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:11:36.364+0530	INFO	handler/handler.go:36	user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:11:36.364+0530	INFO	handler/handler.go:37	err<nil>
+2022-02-15T16:11:36.364+0530	INFO	handler/handler.go:48	CCOUser CCOId:sheetash
+2022-02-15T16:11:38.840+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:11:38.840+0530	INFO	service/session.go:26	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:11:38.840+0530	INFO	handler/handler.go:36	user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:11:38.840+0530	INFO	handler/handler.go:37	err<nil>
+2022-02-15T16:11:38.840+0530	INFO	handler/handler.go:48	CCOUser CCOId:sheetash
+2022-02-15T16:11:39.512+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:11:39.513+0530	INFO	service/session.go:26	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:11:39.513+0530	INFO	handler/handler.go:36	user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:11:39.513+0530	INFO	handler/handler.go:37	err<nil>
+2022-02-15T16:11:39.513+0530	INFO	handler/handler.go:48	CCOUser CCOId:sheetash
+2022-02-15T16:11:40.009+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:11:40.010+0530	INFO	service/session.go:26	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:11:40.010+0530	INFO	handler/handler.go:36	user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:11:40.010+0530	INFO	handler/handler.go:37	err<nil>
+2022-02-15T16:11:40.010+0530	INFO	handler/handler.go:48	CCOUser CCOId:sheetash
+2022-02-15T16:11:40.469+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:11:40.470+0530	INFO	service/session.go:26	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:11:40.470+0530	INFO	handler/handler.go:36	user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:11:40.470+0530	INFO	handler/handler.go:37	err<nil>
+2022-02-15T16:11:40.470+0530	INFO	handler/handler.go:48	CCOUser CCOId:sheetash
+2022-02-15T16:22:30.432+0530	INFO	handler/handler.go:51	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:22:41.486+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:22:41.486+0530	INFO	handler/handler.go:66	CCOUser CCOId:
+2022-02-15T16:22:53.733+0530	INFO	service/admin.go:34	Created cco user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:22:54.946+0530	ERROR	service/admin.go:108	<nil>
+2022-02-15T16:22:54.946+0530	INFO	service/admin.go:53	CCOUserFromAdmin<nil>
+2022-02-15T16:22:54.946+0530	INFO	service/admin.go:54	Err<nil>
+2022-02-15T16:22:55.496+0530	ERROR	service/admin.go:141	<nil>
+2022-02-15T16:22:55.497+0530	ERROR	service/admin.go:60	Error while creating user in admin<nil>
+2022-02-15T16:22:55.497+0530	ERROR	service/admin.go:43	Error while creating or updating user in admin
+2022-02-15T16:22:55.497+0530	INFO	service/admin.go:44	Sending default ccoUser{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:22:55.497+0530	INFO	communication/redis.go:67	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T16:23:00.876+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:23:00.878+0530	INFO	service/session.go:34	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:23:00.878+0530	INFO	handler/handler.go:66	CCOUser CCOId:sheetash
+2022-02-15T16:23:08.315+0530	INFO	handler/handler.go:51	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:23:15.077+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:23:15.077+0530	INFO	handler/handler.go:66	CCOUser CCOId:
+2022-02-15T16:26:55.531+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:26:55.533+0530	INFO	handler/handler.go:74	CCOUser CCOId:
+2022-02-15T16:27:00.706+0530	INFO	service/admin.go:34	Created cco user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:27:01.913+0530	ERROR	service/admin.go:108	<nil>
+2022-02-15T16:27:01.914+0530	INFO	service/admin.go:53	CCOUserFromAdmin<nil>
+2022-02-15T16:27:01.914+0530	INFO	service/admin.go:54	Err<nil>
+2022-02-15T16:27:02.484+0530	ERROR	service/admin.go:141	<nil>
+2022-02-15T16:27:02.485+0530	ERROR	service/admin.go:60	Error while creating user in admin<nil>
+2022-02-15T16:27:02.485+0530	ERROR	service/admin.go:43	Error while creating or updating user in admin
+2022-02-15T16:27:02.485+0530	INFO	service/admin.go:44	Sending default ccoUser{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:27:02.485+0530	INFO	communication/redis.go:67	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T16:27:05.513+0530	INFO	handler/handler.go:51	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:27:08.829+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:27:08.829+0530	INFO	handler/handler.go:74	CCOUser CCOId:
+2022-02-15T16:27:23.189+0530	INFO	service/admin.go:34	Created cco user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:27:23.465+0530	ERROR	service/admin.go:108	<nil>
+2022-02-15T16:27:23.465+0530	INFO	service/admin.go:53	CCOUserFromAdmin<nil>
+2022-02-15T16:27:23.465+0530	INFO	service/admin.go:54	Err<nil>
+2022-02-15T16:27:24.017+0530	ERROR	service/admin.go:141	<nil>
+2022-02-15T16:27:24.017+0530	ERROR	service/admin.go:60	Error while creating user in admin<nil>
+2022-02-15T16:27:24.017+0530	ERROR	service/admin.go:43	Error while creating or updating user in admin
+2022-02-15T16:27:24.017+0530	INFO	service/admin.go:44	Sending default ccoUser{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:27:24.017+0530	INFO	communication/redis.go:67	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T16:27:46.486+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:27:46.488+0530	INFO	service/session.go:34	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:27:46.488+0530	INFO	handler/handler.go:74	CCOUser CCOId:sheetash
+2022-02-15T16:29:11.747+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:29:11.748+0530	INFO	service/session.go:34	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:29:11.749+0530	INFO	handler/handler.go:74	CCOUser CCOId:sheetash
+2022-02-15T16:29:13.312+0530	INFO	handler/handler.go:51	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:29:15.490+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:29:15.490+0530	INFO	handler/handler.go:74	CCOUser CCOId:
+2022-02-15T16:29:21.685+0530	INFO	service/admin.go:34	Created cco user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:29:22.545+0530	ERROR	service/admin.go:108	<nil>
+2022-02-15T16:29:22.546+0530	INFO	service/admin.go:53	CCOUserFromAdmin<nil>
+2022-02-15T16:29:22.546+0530	INFO	service/admin.go:54	Err<nil>
+2022-02-15T16:29:22.827+0530	ERROR	service/admin.go:141	<nil>
+2022-02-15T16:29:22.827+0530	ERROR	service/admin.go:60	Error while creating user in admin<nil>
+2022-02-15T16:29:22.827+0530	ERROR	service/admin.go:43	Error while creating or updating user in admin
+2022-02-15T16:29:22.827+0530	INFO	service/admin.go:44	Sending default ccoUser{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:29:22.827+0530	INFO	communication/redis.go:67	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T16:29:22.832+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:29:22.833+0530	INFO	service/session.go:34	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:29:22.833+0530	INFO	handler/handler.go:74	CCOUser CCOId:sheetash
+2022-02-15T16:30:53.127+0530	INFO	handler/handler.go:51	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:30:53.137+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:30:53.137+0530	INFO	handler/handler.go:70	CCOUser CCOId:
+2022-02-15T16:30:59.503+0530	INFO	service/admin.go:34	Created cco user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:31:00.344+0530	ERROR	service/admin.go:108	<nil>
+2022-02-15T16:31:00.344+0530	INFO	service/admin.go:53	CCOUserFromAdmin<nil>
+2022-02-15T16:31:00.344+0530	INFO	service/admin.go:54	Err<nil>
+2022-02-15T16:31:00.803+0530	ERROR	service/admin.go:141	<nil>
+2022-02-15T16:31:00.803+0530	ERROR	service/admin.go:60	Error while creating user in admin<nil>
+2022-02-15T16:31:00.803+0530	ERROR	service/admin.go:43	Error while creating or updating user in admin
+2022-02-15T16:31:00.803+0530	INFO	service/admin.go:44	Sending default ccoUser{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:31:00.803+0530	INFO	communication/redis.go:67	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T16:31:00.807+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:31:00.807+0530	INFO	service/session.go:34	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:31:00.808+0530	INFO	handler/handler.go:70	CCOUser CCOId:sheetash
+2022-02-15T16:31:04.218+0530	INFO	handler/handler.go:51	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:31:04.223+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:31:04.224+0530	INFO	handler/handler.go:70	CCOUser CCOId:
+2022-02-15T16:31:12.346+0530	INFO	service/admin.go:34	Created cco user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:31:12.815+0530	ERROR	service/admin.go:108	<nil>
+2022-02-15T16:31:12.815+0530	INFO	service/admin.go:53	CCOUserFromAdmin<nil>
+2022-02-15T16:31:12.815+0530	INFO	service/admin.go:54	Err<nil>
+2022-02-15T16:31:13.091+0530	ERROR	service/admin.go:141	<nil>
+2022-02-15T16:31:13.092+0530	ERROR	service/admin.go:60	Error while creating user in admin<nil>
+2022-02-15T16:31:13.092+0530	ERROR	service/admin.go:43	Error while creating or updating user in admin
+2022-02-15T16:31:13.092+0530	INFO	service/admin.go:44	Sending default ccoUser{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:31:13.093+0530	INFO	communication/redis.go:67	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T16:31:13.097+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:31:13.098+0530	INFO	service/session.go:34	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:31:13.098+0530	INFO	handler/handler.go:70	CCOUser CCOId:sheetash
+2022-02-15T16:31:15.908+0530	INFO	handler/handler.go:51	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:31:15.913+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:31:15.914+0530	INFO	handler/handler.go:70	CCOUser CCOId:
+2022-02-15T16:31:31.377+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:31:31.377+0530	INFO	handler/handler.go:70	CCOUser CCOId:
+2022-02-15T16:31:44.484+0530	INFO	service/admin.go:34	Created cco user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:31:45.032+0530	ERROR	service/admin.go:108	<nil>
+2022-02-15T16:31:45.032+0530	INFO	service/admin.go:53	CCOUserFromAdmin<nil>
+2022-02-15T16:31:45.032+0530	INFO	service/admin.go:54	Err<nil>
+2022-02-15T16:31:45.576+0530	ERROR	service/admin.go:141	<nil>
+2022-02-15T16:31:45.576+0530	ERROR	service/admin.go:60	Error while creating user in admin<nil>
+2022-02-15T16:31:45.577+0530	ERROR	service/admin.go:43	Error while creating or updating user in admin
+2022-02-15T16:31:45.577+0530	INFO	service/admin.go:44	Sending default ccoUser{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:31:45.577+0530	INFO	communication/redis.go:67	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T16:31:45.584+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:31:45.585+0530	INFO	service/session.go:34	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:31:45.585+0530	INFO	handler/handler.go:70	CCOUser CCOId:sheetash
+2022-02-15T16:31:51.548+0530	INFO	handler/handler.go:51	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:31:51.552+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:31:51.553+0530	INFO	handler/handler.go:70	CCOUser CCOId:
+2022-02-15T16:31:54.241+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:31:54.241+0530	INFO	handler/handler.go:70	CCOUser CCOId:
+2022-02-15T16:31:59.670+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:31:59.670+0530	INFO	handler/handler.go:70	CCOUser CCOId:
+2022-02-15T16:32:47.022+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:32:47.023+0530	INFO	handler/handler.go:70	CCOUser CCOId:
+2022-02-15T16:32:49.945+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:32:49.945+0530	INFO	handler/handler.go:70	CCOUser CCOId:
+2022-02-15T16:32:55.146+0530	INFO	service/admin.go:34	Created cco user{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:32:56.310+0530	ERROR	service/admin.go:108	<nil>
+2022-02-15T16:32:56.311+0530	INFO	service/admin.go:53	CCOUserFromAdmin<nil>
+2022-02-15T16:32:56.311+0530	INFO	service/admin.go:54	Err<nil>
+2022-02-15T16:32:56.593+0530	ERROR	service/admin.go:141	<nil>
+2022-02-15T16:32:56.593+0530	ERROR	service/admin.go:60	Error while creating user in admin<nil>
+2022-02-15T16:32:56.593+0530	ERROR	service/admin.go:43	Error while creating or updating user in admin
+2022-02-15T16:32:56.593+0530	INFO	service/admin.go:44	Sending default ccoUser{ sheetash  sheetash sheetash@cisco.com    Sheetal Sharma 0 Cisco Systems, Inc.          false  0    false}
+2022-02-15T16:32:56.594+0530	INFO	communication/redis.go:67	Sesion data saved in redis with keysheetash@cisco.com
+2022-02-15T16:32:56.599+0530	INFO	handler/handler.go:33	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:32:56.600+0530	INFO	service/session.go:34	Redis Data:map[Active:false AddrLine1: AddrLine2: AutoScreenName: City: Instructor:false JobLevel: JobRole: Opentoken: Region: SecurityPassword: State: Status: Weightage:0 Zipcode: ccoid:sheetash ccouser_master_id: companyinfo:Cisco Systems, Inc. contact_type: country: email:sheetash@cisco.com first_name: full_name:Sheetal Sharma last_name: phone_number:0 serial_version_uid: userid:sheetash]
+2022-02-15T16:32:56.600+0530	INFO	handler/handler.go:70	CCOUser CCOId:sheetash
+2022-02-15T16:33:00.363+0530	INFO	handler/handler.go:51	cookie:session-id=sheetash@cisco.com
+2022-02-15T16:33:00.367+0530	ERROR	handler/handler.go:30	No Session Id found in request.
+2022-02-15T16:33:00.368+0530	INFO	handler/handler.go:70	CCOUser CCOId:
